@@ -15,6 +15,22 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+<repositories>
+        <repository>
+          <id>grouprepo_h</id>
+          <url>http://130.211.123.186:8081/nexus/content/groups/grouprepo_h/</url>
+        </repository>
+   </repositories>
+   <distributionManagement>
+        <snapshotRepository>
+            <id>snapshot_h</id>
+            <url>http://130.211.123.186:8081/nexus/content/repositories/snapshot_h/</url>
+        </snapshotRepository>
+        <repository>
+            <id>releaserepo_h</id>
+            <url>http://http://130.211.123.186:8081/nexus/content/repositories/releaserepo_h/</url>
+        </repository>
+    </distributionManagement>
   <build>
     <finalName>tomcat</finalName>
   </build>
